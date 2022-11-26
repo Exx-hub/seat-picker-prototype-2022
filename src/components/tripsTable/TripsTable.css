@@ -1,0 +1,16 @@
+.trips-table-container {
+  /* border: 1px solid lightgray; */
+  padding: 40px;
+}
+
+.ant-table-pagination {
+  justify-content: center;
+  /* margin-top: 50px !important; */
+}
+
+.trips-table-container th {
+  background-color: rgba(46, 49, 49, 0.5) !important;
+  color: white !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+}

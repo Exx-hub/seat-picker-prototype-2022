@@ -1,0 +1,25 @@
+.search-trips-container {
+  padding: 20px 63.5px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.col {
+  margin-right: 30px;
+  width: 25%;
+}
+
+.autocomplete {
+  width: 100%;
+}
+
+.date-picker {
+  width: 100%;
+}
+
+.filter-button {
+  background-color: #32c5d2;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

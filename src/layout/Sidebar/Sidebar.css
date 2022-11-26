@@ -1,0 +1,25 @@
+.sider {
+  /* border: 1px solid cyan; */
+  background-color: #26344b !important;
+  height: 93vh;
+}
+
+.sider-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.sider-version {
+  text-align: center;
+  font-size: 11px;
+  color: lightgray;
+  margin-bottom: 5px;
+}
+
+.sider .ant-menu-item-selected {
+  background-color: #233f6b !important;
+
+  /* #011529 */
+}

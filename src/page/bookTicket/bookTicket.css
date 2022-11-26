@@ -1,0 +1,18 @@
+.book-ticket-container {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+.dashed-line {
+  width: 92.5%;
+  border-bottom: dashed rgba(125, 125, 125, 0.5) 1px;
+  margin: 1rem auto;
+}
+
+.no-trips {
+  background-color: #f1f4f7;
+  padding: 40px;
+  width: 92.5%;
+  margin: 0 auto;
+  text-align: center;
+}

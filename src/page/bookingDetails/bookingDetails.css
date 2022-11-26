@@ -1,0 +1,129 @@
+.booking-details-container {
+  display: flex;
+  flex-direction: row;
+
+  padding: 10px;
+  height: 93vh;
+  overflow-y: scroll;
+}
+.booking-details-left {
+  margin-right: 5px;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.legend {
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.legend img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 3px;
+}
+
+.legend div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seat-map {
+  border: 1px solid lightgray;
+
+  border-radius: 10px;
+  background-color: white;
+  flex: 1;
+}
+
+
+.booking-details-right {
+  margin-left: 5px;
+  flex: 1;
+}
+
+.trip-info span,
+.ticket-info span {
+  color: gray;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+
+.trip-info {
+  border: 1px solid lightgray;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.ticket-info {
+  border: 1px solid lightgray;
+  margin-bottom: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+.contact-details {
+  border: 1px solid lightgray;
+  /* height: 190px; */
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.contact-details input {
+  margin-bottom: 8px;
+}
+.passenger-details {
+  border: 1px solid lightgray;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.passenger-details input {
+  margin-bottom: 8px;
+}
+
+.book-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  width: 150px;
+  height: 30px;
+  border: 1px solid #008176;
+  background-color: #008176;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-disabled {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  width: 150px;
+  height: 30px;
+  border: 1px solid lightgray;
+  background-color: white;
+  color: lightgray;
+  cursor: not-allowed;
+  border-radius: 5px;
+}
+
+
+.booking-details-container .ant-row {
+  margin-bottom: 0;
+}
+

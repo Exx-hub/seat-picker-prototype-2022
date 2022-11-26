@@ -1,0 +1,102 @@
+.modal {
+  text-align: center;
+  border-radius: 5px;
+  padding: 0;
+  overflow: hidden;
+  /* z-index: 100; */
+
+}
+
+.cancel-btn {
+  border-radius: 7px;
+  border: 1px solid #333;
+}
+
+.cancel-btn:hover {
+  color: black;
+  border: 1px solid #333;
+}
+
+.ok-btn,
+.ok-btn:hover {
+  border-radius: 7px;
+  border: 1px solid #008176;
+  background-color: #008176;
+  color: white;
+  margin-left: 10px;
+}
+
+.change-password-modal {
+  /* text-align: center; */
+  border-radius: 5px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.change-password-modal .ant-modal-title, .modal .ant-modal-title {
+  font-size: 22px;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.ant-modal-title {
+  font-size: 24px !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.details-div {
+  border: 1px solid rgb(230, 228, 228);
+  margin: 20px 0 ;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.details-div th {
+  background-color: rgba(46, 49, 49, 0.15) !important;
+  color: #333 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  border: 1px solid lightgray
+}
+
+.details-div td {
+  border: 1px solid lightgray
+}
+
+.details-div h2, .fare-details-div h2 {
+  text-align: left;
+  margin-left: 2px;
+  margin-bottom: 20px;
+  color: rgb(82, 82, 82);
+  font-weight: bold;
+}
+
+.fare-details-div {
+  border: 1px solid rgb(230, 228, 228);
+  margin: 20px 0 ;
+  padding: 13px;
+  text-align: left;
+  background-color: white;
+}
+
+.trip-route {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.trip-date {
+  color: rgb(113, 109, 109);
+  font-weight: bold;
+}
+
+.modal .ant-table-cell {
+  padding: 5px;
+}
