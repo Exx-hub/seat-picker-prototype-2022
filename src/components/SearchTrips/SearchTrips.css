@@ -17,9 +17,19 @@
   width: 100%;
 }
 
-.filter-button {
-  background-color: #32c5d2;
+.filter-button,
+.filter-button:hover,
+.filter-button:active,
+.filter-button:focus {
+  background-color: rgba(46, 49, 49, 0.5);
   color: white;
   border-radius: 5px;
   padding: 5px 10px;
+  border-color: transparent;
+  transition: transform 500ms;
+}
+
+.filter-button:hover {
+  transform: scale(1.1);
+  background-color: rgba(105, 110, 110, 0.5);
 }

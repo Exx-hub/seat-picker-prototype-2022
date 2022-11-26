@@ -9,11 +9,8 @@ function BookTicket() {
     <div className="book-ticket-container">
       <SearchTrips setTripsVisible={setTripsVisible} />
       <div className="dashed-line" />
-      {tripsVisible ? (
-        <TripsTable />
-      ) : (
-        <div className="no-trips">Filter to get trips</div>
-      )}
+
+      <TripsTable />
     </div>
   );
 }

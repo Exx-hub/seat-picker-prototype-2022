@@ -4,7 +4,6 @@
   padding: 0;
   overflow: hidden;
   /* z-index: 100; */
-
 }
 
 .cancel-btn {
@@ -20,8 +19,8 @@
 .ok-btn,
 .ok-btn:hover {
   border-radius: 7px;
-  border: 1px solid #008176;
-  background-color: #008176;
+  border-color: transparent;
+  background-color: rgba(46, 49, 49, 0.5);
   color: white;
   margin-left: 10px;
 }
@@ -33,7 +32,8 @@
   overflow: hidden;
 }
 
-.change-password-modal .ant-modal-title, .modal .ant-modal-title {
+.change-password-modal .ant-modal-title,
+.modal .ant-modal-title {
   font-size: 22px;
 }
 
@@ -42,15 +42,14 @@
   justify-content: flex-end;
 }
 
-
 .ant-modal-title {
   font-size: 24px !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .details-div {
   border: 1px solid rgb(230, 228, 228);
-  margin: 20px 0 ;
+  margin: 20px 0;
   padding: 15px;
   background-color: white;
   border-radius: 5px;
@@ -62,14 +61,15 @@
   font-size: 12px !important;
   font-weight: 600 !important;
   letter-spacing: 0.5px;
-  border: 1px solid lightgray
+  border: 1px solid lightgray;
 }
 
 .details-div td {
-  border: 1px solid lightgray
+  border: 1px solid lightgray;
 }
 
-.details-div h2, .fare-details-div h2 {
+.details-div h2,
+.fare-details-div h2 {
   text-align: left;
   margin-left: 2px;
   margin-bottom: 20px;
@@ -79,7 +79,7 @@
 
 .fare-details-div {
   border: 1px solid rgb(230, 228, 228);
-  margin: 20px 0 ;
+  margin: 20px 0;
   padding: 13px;
   text-align: left;
   background-color: white;

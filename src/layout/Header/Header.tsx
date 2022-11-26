@@ -10,7 +10,7 @@ import {
 } from "@ant-design/icons";
 import { useLocation, useNavigate } from "react-router-dom";
 
-import movonLogo from "../../assets/images/movonLogo.png";
+import seatLogo from "../../assets/logo/seatsLogo.png";
 import "./Header.css";
 import { FixMeLater } from "../../types/interfaces";
 
@@ -35,7 +35,7 @@ function _Header(props: FixMeLater) {
   return (
     <Header className="home-header">
       <div className="home-header-logo" onClick={() => navigate("/")}>
-        {/* <Image preview={false} className="header-logo" src={movonLogo} alt="" /> */}
+        <Image preview={false} className="header-logo" src={seatLogo} alt="" />
       </div>
 
       <div className="home-header-right">

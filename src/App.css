@@ -9,3 +9,11 @@
   box-sizing: border-box;
   /* font-family: 'Open Sans', sans-serif; */
 }
+
+.ant-pagination-item-active {
+  border-color: gray !important;
+}
+
+.ant-pagination a {
+  color: #333 !important;
+}

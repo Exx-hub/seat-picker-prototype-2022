@@ -9,15 +9,16 @@
 }
 
 .home-header-logo {
-  background-color: #008176;
+  background-color: rgba(28, 29, 29, 0.5);
   width: 12%;
   min-width: 210px;
   text-align: center;
   cursor: pointer;
+  padding-top: 10px;
 }
 
 .header-logo {
-  height: 75px;
+  height: 2rem;
 }
 
 .home-header-right {

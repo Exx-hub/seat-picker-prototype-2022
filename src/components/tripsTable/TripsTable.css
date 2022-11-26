@@ -9,8 +9,25 @@
 }
 
 .trips-table-container th {
-  background-color: rgba(46, 49, 49, 0.5) !important;
-  color: white !important;
+  background-color: rgba(46, 49, 49, 0.15) !important;
+  color: #333 !important;
   font-size: 11px !important;
   font-weight: 500 !important;
+}
+
+.trips-table-container button,
+.trips-table-container button:hover,
+.trips-table-container button:focus,
+.trips-table-container button:active {
+  background-color: rgba(46, 49, 49, 0.5);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border-color: transparent;
+  transition: transform 500ms;
+}
+
+.trips-table-container button:hover {
+  transform: scale(1.1);
+  background-color: rgba(105, 110, 110, 0.5);
 }
