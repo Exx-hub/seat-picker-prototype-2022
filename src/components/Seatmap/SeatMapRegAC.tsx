@@ -491,7 +491,7 @@ function SeatMapRegAC(props) {
       </div>
 
       {/* 41-45 last row  */}
-      <div className="seats-row">
+      <div className="seats-row last-row">
         <div className={getClassName("41")}>
           <Image src={getSeatImage("41")} alt="" preview={false} />
           <div
@@ -510,10 +510,7 @@ function SeatMapRegAC(props) {
             42
           </div>
         </div>
-        <div
-          className={getClassName("43")}
-          style={{ marginLeft: 10, marginRight: 10 }}
-        >
+        <div className={getClassName("43")}>
           <Image src={getSeatImage("43")} alt="" preview={false} />
           <div
             className="seat-number"

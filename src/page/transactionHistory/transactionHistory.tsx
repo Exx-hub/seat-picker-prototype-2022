@@ -65,7 +65,7 @@ const tableSource = [
 const dataSource = [
   {
     ticketId: "123456",
-    transactionDate: "3/24/2022 1:02 PM",
+    transactionDate: "12/24/2022 1:02 PM",
     passengerNames: "Alvin Buid, Alvin Acosta, Mikee Gemilo, Jona Guzon",
     seatNumber: "1,2,3,4",
     amount: "₱3328.00",
@@ -76,7 +76,7 @@ const dataSource = [
   },
   {
     ticketId: "122345",
-    transactionDate: "3/23/2022 4:41 PM",
+    transactionDate: "12/23/2022 4:41 PM",
     passengerNames: "Juan dela Cruz",
     seatNumber: "22",
     amount: "₱832.70",
@@ -87,7 +87,7 @@ const dataSource = [
   },
   {
     ticketId: "133456",
-    transactionDate: "3/18/2022 10:30 AM",
+    transactionDate: "12/18/2022 10:30 AM",
     passengerNames: "Pacifico Ruiz",
     seatNumber: "11",
     amount: "₱832.70",
@@ -98,7 +98,7 @@ const dataSource = [
   },
   {
     ticketId: "144567",
-    transactionDate: "3/18/2022 11:35 AM",
+    transactionDate: "12/18/2022 11:35 AM",
     passengerNames: "Conrado Paulo",
     seatNumber: "15",
     amount: "₱832.70",
@@ -128,20 +128,23 @@ function TransactionHistory() {
         <div className="table-title">Search Transaction</div>
 
         <div className="input-date-dropdown-div">
-          <Input
-            placeholder="Trip ID | Ticket ID"
-            style={{ width: 170, marginRight: 20 }}
-            // value={rsInput}
-            // onChange={(e) => setRsInput(e.target.value)}
-            // onPressEnter={searchByRsNo}
-            suffix={
-              <SearchOutlined
-                style={{ cursor: "pointer" }}
-                // onClick={searchByRsNo}
-              />
-            }
-          />
-          <RangePicker style={{ width: 250, marginRight: 20 }} />
+          <div>
+            <Input
+              placeholder="Trip ID | Ticket ID"
+              // value={rsInput}
+              // onChange={(e) => setRsInput(e.target.value)}
+              // onPressEnter={searchByRsNo}
+              suffix={
+                <SearchOutlined
+                  style={{ cursor: "pointer" }}
+                  // onClick={searchByRsNo}
+                />
+              }
+            />
+          </div>
+          <div>
+            <RangePicker />
+          </div>
 
           {/* @ts-ignore  */}
           <Dropdown overlay={menu}>

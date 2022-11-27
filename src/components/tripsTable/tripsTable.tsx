@@ -4,20 +4,15 @@ import "./TripsTable.css";
 import { Table, Button } from "antd";
 
 import { useNavigate } from "react-router-dom";
-import { FixMeLater } from "../../types/interfaces";
+import { FixMeLater, TripDetails } from "../../types/interfaces";
 
 function TripsTable() {
   const navigate = useNavigate();
 
-  const viewSeats = (tripDetails: FixMeLater) => {
+  const viewSeats = (tripDetails: TripDetails) => {
     const { tripId } = tripDetails;
     navigate(`/booking-details/${tripId}`, { state: tripDetails });
   };
-
-  // {
-  //   pathname: `/booking-details/${tripId}`,
-  //   state: { tripDetails },
-  // }
 
   const dataSource = [
     {
@@ -26,7 +21,7 @@ function TripsTable() {
       endStation: "Baguio",
       startDate: "12/12/2022 06:00 PM",
       selectedBus: "Reg_AC",
-      seatsLeft: 10,
+      seatsLeft: 39,
       key: 0,
     },
     {
@@ -35,7 +30,7 @@ function TripsTable() {
       endStation: "Baler",
       startDate: "12/23/2022 10:00 PM",
       selectedBus: "Premier",
-      seatsLeft: 2,
+      seatsLeft: 32,
       key: 1,
     },
     {
@@ -44,7 +39,7 @@ function TripsTable() {
       endStation: "Cubao",
       startDate: "12/23/2022 08:00 PM",
       selectedBus: "New_Normal",
-      seatsLeft: "FULL",
+      seatsLeft: 31,
       key: 2,
     },
     {
@@ -53,7 +48,7 @@ function TripsTable() {
       endStation: "La Union",
       startDate: "12/20/2022 06:00 PM",
       selectedBus: "Reg_AC",
-      seatsLeft: 2,
+      seatsLeft: 39,
       key: 3,
     },
   ];
@@ -99,7 +94,7 @@ function TripsTable() {
       title: "Action",
       key: "action",
       align: "center",
-      render: (tripDetails: FixMeLater) => (
+      render: (tripDetails: TripDetails) => (
         <Button onClick={() => viewSeats(tripDetails)}>View Seats</Button>
       ),
     },
@@ -109,7 +104,7 @@ function TripsTable() {
     <div className="trips-table-container">
       <Table
         // loading={this.state.fetching}
-        // scroll={{ x: true }}
+        scroll={{ x: true }}
         rowKey="key"
         // pagination={false}
         // @ts-ignore

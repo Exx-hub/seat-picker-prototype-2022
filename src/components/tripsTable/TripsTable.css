@@ -1,6 +1,9 @@
 .trips-table-container {
-  /* border: 1px solid lightgray; */
   padding: 40px;
+}
+
+.trips-table-container table {
+  border: 1px solid lightgray;
 }
 
 .ant-table-pagination {
@@ -30,4 +33,17 @@
 .trips-table-container button:hover {
   transform: scale(1.1);
   background-color: rgba(105, 110, 110, 0.5);
+}
+
+/* mobile -  */
+/* 0 to 500px  */
+@media screen and (max-width: 500px) {
+  .trips-table-container {
+    /* border: 1px solid lightgray; */
+    padding: 0;
+    border: none;
+  }
+  .trips-table-container table {
+    font-size: 0.6rem;
+  }
 }

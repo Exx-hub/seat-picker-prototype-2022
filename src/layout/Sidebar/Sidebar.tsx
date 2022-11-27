@@ -2,6 +2,7 @@ import { Menu, Layout } from "antd";
 import { useLocation, useNavigate } from "react-router-dom";
 import { config } from "../../config";
 import "./Sidebar.css";
+import { SearchOutlined, ClockCircleOutlined } from "@ant-design/icons";
 const { Sider } = Layout;
 
 function Sidebar() {
@@ -11,13 +12,14 @@ function Sidebar() {
   const { pathname } = location;
 
   return (
-    <Sider width={210} className="sider">
+    <Sider width={210} className="sider" collapsible>
       <div className="sider-container">
         <Menu theme="dark" mode="inline" selectedKeys={[pathname]}>
           <Menu.Item
             key={"/"}
             onClick={() => navigate("/")}
             style={{ margin: 0, height: 50 }}
+            icon={<SearchOutlined />}
           >
             Search Trips
           </Menu.Item>
@@ -25,6 +27,7 @@ function Sidebar() {
             key={"/transactions"}
             onClick={() => navigate("/transactions")}
             style={{ margin: 0, height: 50 }}
+            icon={<ClockCircleOutlined />}
           >
             Transaction History
           </Menu.Item>

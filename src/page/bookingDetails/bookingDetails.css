@@ -1,22 +1,22 @@
 .booking-details-container {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
 
   padding: 10px;
   height: 93vh;
   overflow-y: scroll;
 }
 .booking-details-left {
-  margin-right: 5px;
-  flex: 1;
-
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .legend {
   border: 1px solid lightgray;
-  margin-bottom: 10px;
   padding: 15px;
   border-radius: 10px;
   background-color: white;
@@ -38,15 +38,8 @@
 }
 .seat-map {
   border: 1px solid lightgray;
-
   border-radius: 10px;
   background-color: white;
-  flex: 1;
-}
-
-.booking-details-right {
-  margin-left: 5px;
-  flex: 1;
 }
 
 .trip-info span,
@@ -72,7 +65,6 @@
 }
 .contact-details {
   border: 1px solid lightgray;
-  /* height: 190px; */
   margin-bottom: 5px;
   padding: 10px;
   border-radius: 10px;
@@ -131,3 +123,48 @@
 .booking-details-container .ant-row {
   margin-bottom: 0;
 }
+
+/* mobile -  */
+/* 0 to 500px  */
+@media screen and (max-width: 500px) {
+  .booking-details-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 5px;
+  }
+  .legend {
+    padding: 0.6rem;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 0.6rem;
+  }
+  .legend img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .seat-map {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .booking-details-right {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+/* large mobile to tablet   */
+/* 501px to 768px  */
+/* @media screen and (max-width: 500px) {
+
+} */
+
+/* *from 769 to 1200 --- laptop devices */
+/* @media screen and (min-width: 769px) and (max-width: 1200px){
+	// rules
+} */
+
+/* *from 1201 and up --- desktop and large screen devices */
+/* @media screen and (min-width: 1201px) {
+	// rules
+} */

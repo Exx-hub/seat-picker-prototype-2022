@@ -59,13 +59,13 @@
 }
 
 .dual-seat-left {
-  margin-right: 37.5px;
+  margin-right: 27.5px;
   display: flex;
   align-items: center;
 }
 
 .dual-seat-right {
-  margin-left: 37.5px;
+  margin-left: 27.5px;
   display: flex;
   align-items: center;
 }
@@ -81,3 +81,46 @@
   justify-content: center;
   gap: 25px;
 }
+
+/* mobile -  */
+/* 0 to 500px  */
+@media screen and (max-width: 500px) {
+  .seat-div {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    height: 2.3rem;
+    width: 2.4rem;
+  }
+
+  .seat-number {
+    font-size: 0.8rem;
+  }
+
+  .dual-seat-left {
+    margin-right: 1.1rem;
+  }
+
+  .dual-seat-right {
+    margin-left: 1.1rem;
+  }
+
+  .last-row .seat-div {
+    margin-right: 3px;
+  }
+}
+
+/* large mobile to tablet   */
+/* 501px to 768px  */
+/* @media screen and (max-width: 500px) {
+
+} */
+
+/* *from 769 to 1200 --- laptop devices */
+/* @media screen and (min-width: 769px) and (max-width: 1200px){
+	// rules
+} */
+
+/* *from 1201 and up --- desktop and large screen devices */
+/* @media screen and (min-width: 1201px) {
+	// rules
+} */

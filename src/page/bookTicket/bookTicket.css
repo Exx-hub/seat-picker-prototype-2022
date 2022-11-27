@@ -1,6 +1,7 @@
 .book-ticket-container {
   background-color: white;
   padding: 40px 20px;
+  height: 93vh;
 }
 
 .dashed-line {
@@ -9,10 +10,10 @@
   margin: 1rem auto;
 }
 
-.no-trips {
-  background-color: #f1f4f7;
-  padding: 40px;
-  width: 92.5%;
-  margin: 0 auto;
-  text-align: center;
+/* mobile -  */
+/* 0 to 500px  */
+@media screen and (max-width: 500px) {
+  .book-ticket-container {
+    padding: 20px 10px;
+  }
 }

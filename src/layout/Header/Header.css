@@ -9,35 +9,77 @@
 }
 
 .home-header-logo {
+  width: 100%;
+  min-width: auto;
+  max-width: 80px;
+  /* border: 1px solid red; */
+}
+.header-logo {
+  height: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home-header-title {
+  font-size: 1.1rem;
+}
+
+/* .home-header-logo {
   background-color: rgba(28, 29, 29, 0.5);
   width: 12%;
   min-width: 210px;
   text-align: center;
   cursor: pointer;
   padding-top: 10px;
-}
+} */
 
-.header-logo {
+/* .header-logo {
   height: 2rem;
-}
+} */
 
-.home-header-right {
+/* .home-header-right {
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 0px 20px;
-}
+} */
 
-.home-header-title {
+/* .home-header-title {
   font-size: 1.6rem;
-}
+} */
 
-.home-header-dropdown-span {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
+/* mobile -  */
+/* 0 to 500px  */
+/* @media screen and (max-width: 500px) {
+  .home-header-logo {
+    width: 100%;
+    min-width: auto;
+    max-width: 80px;
+    
+  }
+  .header-logo {
+    height: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+  }
 
-.ant-dropdown-menu {
-  transform: translate(10px, -10px);
-}
+  .home-header-title {
+    font-size: 1.1rem;
+  }
+} */
+
+/* large mobile to tablet   */
+/* 501px to 768px  */
+/* @media screen and (max-width: 769) {
+
+} */
+
+/* *from 769 to 1200 --- laptop devices */
+/* @media screen and (min-width: 769px) and (max-width: 1200px){
+	// rules
+} */
+
+/* *from 1201 and up --- desktop and large screen devices */
+/* @media screen and (min-width: 1201px) {
+	// rules
+} */

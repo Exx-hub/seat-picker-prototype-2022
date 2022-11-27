@@ -3,6 +3,7 @@
   border-radius: 5px;
   padding: 0;
   overflow: hidden;
+  top: 3rem;
   /* z-index: 100; */
 }
 
@@ -97,6 +98,54 @@
   font-weight: bold;
 }
 
+.total-price-div {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
 .modal .ant-table-cell {
   padding: 5px;
 }
+
+/* mobile -  */
+/* 0 to 500px  */
+@media screen and (max-width: 500px) {
+  .ant-modal-title {
+    font-size: 1.2rem !important;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .trip-route {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+  .total-price-div {
+    font-size: 0.8rem;
+  }
+  .ant-modal-body {
+    padding: 0.8rem;
+  }
+
+  .modal {
+  }
+}
+
+/* large mobile to tablet   */
+/* 501px to 768px  */
+/* @media screen and (max-width: 500px) {
+
+} */
+
+/* *from 769 to 1200 --- laptop devices */
+/* @media screen and (min-width: 769px) and (max-width: 1200px){
+	// rules
+} */
+
+/* *from 1201 and up --- desktop and large screen devices */
+/* @media screen and (min-width: 1201px) {
+	// rules
+} */

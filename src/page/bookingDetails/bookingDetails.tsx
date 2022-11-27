@@ -22,6 +22,7 @@ function BookingDetails() {
 
   // console.log(location);
   const tripDetails = location.state;
+  // console.log(tripDetails);
 
   // selected seats array filled by clicking seats in seatmap component and passed to api for booking
   // along with passenger details, fare, and contact details
@@ -30,6 +31,8 @@ function BookingDetails() {
 
   // from api get seats already taken
   const [seatsTaken] = useState(["6", "7"]);
+  const [seatsTaken1] = useState(["6", "7", "13", "23", "24", "33", "34"]);
+
   // from api get seats reserved for senior
   const [seniorSeats] = useState(["1", "2", "3", "4"]);
   const [seniorSeatsA] = useState(["1", "2", "3"]);
@@ -50,6 +53,8 @@ function BookingDetails() {
     passenger4: "",
     passenger5: "",
   });
+
+  // console.log(passengerDetails);
 
   // confirm modal state
   const [summaryVisible, setSummaryVisible] = useState(false);
@@ -124,7 +129,7 @@ function BookingDetails() {
           <SeatMapPremier
             selectedSeats={selectedSeats}
             setSelectedSeats={setSelectedSeats}
-            seatsTaken={seatsTaken}
+            seatsTaken={seatsTaken1}
             seniorSeats={seniorSeats}
           />
         );

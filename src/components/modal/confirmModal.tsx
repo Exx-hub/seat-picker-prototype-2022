@@ -2,7 +2,7 @@ import { Modal, Button, Table } from "antd";
 import "./modal.css";
 
 import { CaretRightOutlined } from "@ant-design/icons";
-import { FixMeLater } from "../../types/interfaces";
+import { BookedPassenger, TripDetails } from "../../types/interfaces";
 
 const tableSource = [
   {
@@ -19,7 +19,17 @@ const tableSource = [
   },
 ];
 
-function ConfirmModal(props: FixMeLater) {
+interface ConfirmModalProps {
+  visible: boolean;
+  handleCancel: () => void;
+  handleOk: () => void;
+  tripDetails: TripDetails;
+  passengerDetails: BookedPassenger[];
+  farePerSeat: number;
+  noOfSeats: number;
+}
+
+function ConfirmModal(props: ConfirmModalProps) {
   const {
     visible,
     handleCancel,
@@ -74,7 +84,7 @@ function ConfirmModal(props: FixMeLater) {
           <div>
             <span>No. of Seats:</span> &nbsp; {noOfSeats}
           </div>
-          <div style={{ fontWeight: "bold", marginTop: 8, fontSize: 16 }}>
+          <div className="total-price-div">
             <span>Total Fare:</span> ₱{(noOfSeats * farePerSeat).toFixed(2)}
           </div>
         </div>
