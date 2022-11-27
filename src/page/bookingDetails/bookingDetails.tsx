@@ -11,7 +11,7 @@ import ConfirmModal from "../../components/modal/confirmModal";
 import SeatMapRegAC from "../../components/Seatmap/SeatMapRegAC";
 import SeatMapNewNormal from "../../components/Seatmap/SeatMapNewNormal";
 import SeatMapPremier from "../../components/Seatmap/SeatMapPremier";
-import { FixMeLater } from "../../types/interfaces";
+import { BookedPassenger } from "../../types/interfaces";
 import { bookingSuccessful } from "../../utility";
 
 const { Content } = Layout;
@@ -59,7 +59,7 @@ function BookingDetails() {
   // confirm modal state
   const [summaryVisible, setSummaryVisible] = useState(false);
   // passengerArray with name and seat no
-  const [passengerArray, setPassengerArray] = useState<FixMeLater>([]);
+  const [passengerArray, setPassengerArray] = useState<BookedPassenger[]>([]);
   // console.log(passengerArray);
 
   // toggles confirm modal, passes passenger list as array with name and seat number.

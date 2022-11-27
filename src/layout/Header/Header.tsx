@@ -1,22 +1,15 @@
 import { useEffect, useState } from "react";
 
-import { Menu, Dropdown, Layout, Image } from "antd";
-import {
-  DownOutlined,
-  UserOutlined,
-  InfoCircleOutlined,
-  PoweroffOutlined,
-  LeftOutlined,
-} from "@ant-design/icons";
+import { Layout, Image } from "antd";
+import { LeftOutlined } from "@ant-design/icons";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import seatLogo from "../../assets/logo/seatsLogo.png";
 import "./Header.css";
-import { FixMeLater } from "../../types/interfaces";
 
 const { Header } = Layout;
 
-function _Header(props: FixMeLater) {
+function _Header() {
   const [headerTitle, setHeaderTitle] = useState("");
 
   const navigate = useNavigate();

@@ -15,7 +15,7 @@ class UserProfileClass {
     }
   }
 
-  setCredential(data: FixMeLater) {
+  setCredential(data: ISetItem) {
     if (data) {
       localStorage.setItem("credential", JSON.stringify(data));
       if (localStorage.getItem("credential")) {

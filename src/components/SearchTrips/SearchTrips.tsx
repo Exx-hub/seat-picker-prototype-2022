@@ -2,7 +2,7 @@ import "./SearchTrips.css";
 import { startDes, endDes } from "./utils";
 
 import { AutoComplete, DatePicker, Col, Row, Button, Select } from "antd";
-import { FixMeLater } from "../../types/interfaces";
+
 const { Option } = Select;
 
 interface SearchTripsProps {

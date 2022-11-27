@@ -4,7 +4,7 @@ import "./TripsTable.css";
 import { Table, Button } from "antd";
 
 import { useNavigate } from "react-router-dom";
-import { FixMeLater, TripDetails } from "../../types/interfaces";
+import { TripDetails } from "../../types/interfaces";
 
 function TripsTable() {
   const navigate = useNavigate();
