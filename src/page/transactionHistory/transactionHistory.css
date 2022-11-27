@@ -1,26 +1,28 @@
 .transactionHistory-container {
   height: 93vh;
-  padding: 20px;
+
   overflow-y: scroll;
+  padding: 5px;
 }
 
 .search-date-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
+  align-items: center;
+  padding: 10px;
 }
 
 .table-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 0.5rem;
 }
 
 .input-date-dropdown-div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 0.5rem;
 }
 
@@ -43,18 +45,12 @@
   margin-bottom: 25px;
 }
 
-.tableContainer {
-  width: 100%;
-  padding: 15px;
-}
-
 .tableContainer th {
   background-color: rgba(46, 49, 49, 0.15) !important;
   color: #333 !important;
   font-size: 12px !important;
   font-weight: 600 !important;
   letter-spacing: 0.5px;
-  /* border-color: gray !important; */
 }
 
 .tableContainer td {
@@ -63,43 +59,45 @@
   color: black;
 }
 
-/* mobile -  */
-/* 0 to 500px  */
-@media screen and (max-width: 500px) {
+.dropdown-item-btn {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
   .transactionHistory-container {
-    padding: 5px;
+    padding: 20px;
   }
+
+  .table-title {
+    font-size: 1.5rem;
+  }
+
   .search-date-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
   }
+
   .input-date-dropdown-div {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .dropdown-item-btn {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
   }
 
   .tableContainer {
-    padding: 0px;
+    width: 100%;
+    padding: 15px;
+  }
+  .dropdown-item-btn {
+    width: auto;
   }
 }
 
-/* large mobile to tablet   */
-/* 501px to 768px  */
-/* @media screen and (max-width: 500px) {
-
-} */
-
-/* *from 769 to 1200 --- laptop devices */
-/* @media screen and (min-width: 769px) and (max-width: 1200px){
-	// rules
-} */
-
-/* *from 1201 and up --- desktop and large screen devices */
-/* @media screen and (min-width: 1201px) {
-	// rules
-} */
+@media screen and (min-width: 1200px) {
+  .search-date-container {
+    flex-direction: row;
+  }
+  .table-title {
+    margin-bottom: 0;
+  }
+}

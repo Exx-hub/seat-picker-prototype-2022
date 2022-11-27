@@ -1,9 +1,8 @@
 .trips-table-container {
-  padding: 40px;
+  padding: 0;
 }
-
 .trips-table-container table {
-  border: 1px solid lightgray;
+  font-size: 0.6rem;
 }
 
 .ant-table-pagination {
@@ -13,9 +12,7 @@
 
 .trips-table-container th {
   background-color: rgba(46, 49, 49, 0.15) !important;
-  color: #333 !important;
-  font-size: 11px !important;
-  font-weight: 500 !important;
+  font-weight: bold !important;
 }
 
 .trips-table-container button,
@@ -37,13 +34,13 @@
 
 /* mobile -  */
 /* 0 to 500px  */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 1200px) {
   .trips-table-container {
-    /* border: 1px solid lightgray; */
-    padding: 0;
-    border: none;
+    padding: 40px;
   }
+
   .trips-table-container table {
-    font-size: 0.6rem;
+    border: 1px solid lightgray;
+    font-size: 0.8rem;
   }
 }

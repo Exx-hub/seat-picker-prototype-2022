@@ -23,3 +23,9 @@
 
   /* #011529 */
 }
+
+@media screen and (max-height: 799px) {
+  .sider {
+    height: 91vh;
+  }
+}

@@ -3,13 +3,23 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { config } from "../../config";
 import "./Sidebar.css";
 import { SearchOutlined, ClockCircleOutlined } from "@ant-design/icons";
+import { useEffect, useState } from "react";
 const { Sider } = Layout;
 
 function Sidebar() {
+  const [isCollapsed, setIsCollapsed] = useState(false);
   const navigate = useNavigate();
 
   const location = useLocation();
   const { pathname } = location;
+
+  // useEffect(() => {
+  //   let mediaQuery = window.matchMedia("(max-width: 768px)");
+
+  //   if (mediaQuery.matches) {
+  //     setIsCollapsed(true);
+  //   }
+  // }, []);
 
   return (
     <Sider width={210} className="sider" collapsible>

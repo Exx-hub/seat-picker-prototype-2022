@@ -1,12 +1,13 @@
 .search-trips-container {
-  padding: 20px 63.5px;
   display: flex;
-  align-items: flex-end;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
 }
 
 .col {
-  margin-right: 30px;
-  width: 25%;
+  margin-right: 0;
+  width: 100%;
 }
 
 .autocomplete {
@@ -15,6 +16,11 @@
 
 .date-picker {
   width: 100%;
+}
+
+.button-column {
+  align-self: flex-end;
+  margin-top: 0.8rem;
 }
 
 .filter-button,
@@ -34,22 +40,15 @@
   background-color: rgba(105, 110, 110, 0.5);
 }
 
-/* mobile -  */
-/* 0 to 500px  */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 768px) {
   .search-trips-container {
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 20px 63.5px;
   }
 
   .col {
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .button-column {
-    align-self: flex-end;
-    margin-top: 0.8rem;
+    margin-right: 30px;
+    width: 25%;
   }
 }

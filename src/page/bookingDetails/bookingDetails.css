@@ -1,11 +1,9 @@
 .booking-details-container {
-  /* display: flex;
-  flex-direction: row; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 5px;
 
-  padding: 10px;
   height: 93vh;
   overflow-y: scroll;
 }
@@ -16,18 +14,21 @@
 }
 
 .legend {
-  border: 1px solid lightgray;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: white;
+  padding: 0.6rem;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 0.6rem;
 
   display: flex;
   justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid lightgray;
 }
 
 .legend img {
-  height: 40px;
-  width: 40px;
+  height: 2rem;
+  width: 2rem;
   margin-bottom: 3px;
 }
 
@@ -40,6 +41,13 @@
   border: 1px solid lightgray;
   border-radius: 10px;
   background-color: white;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.booking-details-right {
+  width: 95%;
+  margin: auto;
 }
 
 .trip-info span,
@@ -124,47 +132,31 @@
   margin-bottom: 0;
 }
 
-/* mobile -  */
-/* 0 to 500px  */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 768px) {
   .booking-details-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+
+    padding: 10px;
   }
+
   .legend {
-    padding: 0.6rem;
-    width: 95%;
-    margin: 0 auto;
-    font-size: 0.6rem;
+    padding: 15px;
+    width: 100%;
+    font-size: 0.85rem;
   }
-  .legend img {
-    height: 2rem;
-    width: 2rem;
-  }
+
   .seat-map {
-    width: 95%;
-    margin: 0 auto;
+    width: 100%;
   }
+
+  .legend img {
+    height: 40px;
+    width: 40px;
+  }
+
   .booking-details-right {
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
   }
 }
-
-/* large mobile to tablet   */
-/* 501px to 768px  */
-/* @media screen and (max-width: 500px) {
-
-} */
-
-/* *from 769 to 1200 --- laptop devices */
-/* @media screen and (min-width: 769px) and (max-width: 1200px){
-	// rules
-} */
-
-/* *from 1201 and up --- desktop and large screen devices */
-/* @media screen and (min-width: 1201px) {
-	// rules
-} */
